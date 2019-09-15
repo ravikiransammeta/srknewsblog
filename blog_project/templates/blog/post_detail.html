@@ -1,0 +1,10 @@
+{%extends 'blog/base.html'%}
+{%block title_block%}SRK's BLOG HOME PAGE{%endblock%}
+  {%block content%}
+  <h1>{{post.title}}</h1>
+  <p id='date'>published on {{post.publish}} by {{post.author|title}}</p>
+  {{post.body|linebreaks}}
+
+
+
+  {%endblock%}
